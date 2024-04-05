@@ -1,9 +1,18 @@
-.navbar-container{
-    display: flex;
+.navbar-container {
+  display: flex;
 
-    .navbar-logo img{
-        border-radius: 30%;
-        height: 30%;
-
+  .navbar-logo {
+   display: flex;
+  
+    img {
+      border-radius: 30%;
+      height: 20%;
+      display: flex;
     }
+    .headings h3{
+         justify-content: start;
+        display: flex;
+        flex-direction: column;
+    }
+  }
 }
