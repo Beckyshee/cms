@@ -48,6 +48,11 @@ const Navbar: React.FC<NavbarProps> = () => {
             </NavLink>
             <ul>
               <li>
+                <li>
+                  <NavLink to="/pcmf" onClick={toggleMenu}>
+                    PCMF
+                  </NavLink>
+                </li>
                 <NavLink to="/guild" onClick={toggleMenu}>
                   Women's Guild
                 </NavLink>
