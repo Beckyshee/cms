@@ -11,10 +11,55 @@ const Navbar = () => {
           <h3>PCEA</h3>
           <h3>RURINGU CHURCH</h3>
         </div>
-          </div>
-          <div className="navbar-links">
-              <a href="#">Home</a>
-          </div>
+      </div>
+      <div className="navbar-links">
+        <ul>
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li>
+                <a href="#">Who we are</a>
+              </li>
+              <li>
+                <a href="#">Leadership Structure</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Groups</a>
+            <ul>
+              <li>
+                <a href="#">Women's Guild</a>
+              </li>
+              <li>
+                <a href="#">Youth</a>
+              </li>
+              <li>
+                <a href="#">Children Ministry</a>
+              </li>
+              <li>
+                <a href="#">Brigade</a>
+              </li>
+
+              <li>
+                <a href="#">Districts</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Announcements</a>
+          </li>
+          <li>
+            <a href="#">Sermons</a>
+          </li>
+          <li>
+            <a href="#">Missions</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
