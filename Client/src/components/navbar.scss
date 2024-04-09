@@ -36,6 +36,11 @@
   color: #fff; 
   text-decoration: none; 
   margin-right: 20px;
+  transition: color 0.3s; 
+}
+
+.navbar-links a:hover {
+  color: #00fffb; 
 }
 
 .navbar-links ul ul {
@@ -46,6 +51,7 @@
 
 .navbar-links ul li:hover > ul {
   display: block;
+  background-color: #edbdbd;
 }
 
 .heading {
