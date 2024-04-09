@@ -1,8 +1,14 @@
 import './navbar.scss'
 import logo from '../assets/pcea-logo.jpg'
+import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate("/about-us");
+  }
   return (
     <div className="navbar-container">
       <div className="navbar-logo">
@@ -14,8 +20,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-links">
         <ul>
-          <li>
-            <a href="#">About</a>
+          <li onClick={handleHomeClick}>
+            About
             <ul>
               <li>
                 <a href="#">Who we are</a>
