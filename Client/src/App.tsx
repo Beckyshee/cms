@@ -9,6 +9,9 @@ import Districts from './pages/Districts';
 import Youth from './pages/Youth';
 import Brigade from './pages/Brigade';
 import ChildrenMinistry from './pages/ChildrenMinistry';
+import Sermons from './pages/Sermons';
+import Missions from './pages/Missions';
+import Announcements from './pages/Announcements';
 
 
 
@@ -28,6 +31,10 @@ function App() {
         <Route path="/kids" element={<ChildrenMinistry />}></Route>
         <Route path="/youth" element={<Youth />}></Route>
         <Route path="/brigade" element={<Brigade />}></Route>
+
+        <Route path="/sermons" element={<Sermons />}></Route>
+        <Route path="/missions" element={<Missions />}></Route>
+        <Route path="/announcements" element={<Announcements />}></Route>
       </Routes>
     </>
   );
