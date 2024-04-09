@@ -2,7 +2,9 @@
 
 const Leadership = () => {
   return (
-    <div>Leadership</div>
+    <div>Leadership
+      <h3>LEADERS OF TOMORROW</h3>
+    </div>
   )
 }
 
