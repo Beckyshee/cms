@@ -8,6 +8,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       <div className={isOpen ? "navbar-links active" : "navbar-links"}>
         <ul>
           <li>
-            <NavLink to="/" activeClassName="active">
+            <NavLink to="/" >
               About
             </NavLink>
             <ul>
@@ -43,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             </ul>
           </li>
           <li>
-            <NavLink to="/groups" activeClassName="active">
+            <NavLink to="/groups" >
               Groups
             </NavLink>
             <ul>
@@ -80,14 +81,14 @@ const Navbar: React.FC<NavbarProps> = () => {
             </ul>
           </li>
           <li>
-            <NavLink to="/events" activeClassName="active" onClick={toggleMenu}>
+            <NavLink to="/events"  onClick={toggleMenu}>
               Events
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/announcements"
-              activeClassName="active"
+              
               onClick={toggleMenu}
             >
               Announcements
@@ -96,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <li>
             <NavLink
               to="/sermons"
-              activeClassName="active"
+              
               onClick={toggleMenu}
             >
               Sermons
@@ -105,7 +106,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <li>
             <NavLink
               to="/missions"
-              activeClassName="active"
+              
               onClick={toggleMenu}
             >
               Missions
