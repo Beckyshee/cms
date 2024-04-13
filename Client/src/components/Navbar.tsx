@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 import logo from "../assets/pcea-logo.jpg";
-import { NavLink } from "react-router-dom";
+import {  NavLink, useNavigate } from "react-router-dom";
 
 interface NavbarProps {
   
 }
 
 const Navbar: React.FC<NavbarProps> = () => {
+  const navigate = useNavigate()
 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleClick = () => {
+    navigate("/about-us")
+}
 
   return (
     <nav className="navbar-container">
       <div className="navbar-logo">
-        <img src={logo} alt="logo" className="logo" />
+        <img onClick={handleClick} src={logo} alt="logo" className="logo" />
         <div className="heading">
           <h3>PCEA</h3>
           <h3>RURINGU CHURCH</h3>
