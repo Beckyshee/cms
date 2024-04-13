@@ -1,4 +1,7 @@
 import logo from '../assets/pcea-logo.jpg';
+import { FaPhone } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { MdLocationOn } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -15,7 +18,23 @@ const Footer = () => {
       <div className="contactus">
         <div className="header">CONTACT US</div>
         <div className="contact-details">
-          
+          <div className="contact-">
+            <FaPhone />
+            <p>07123456789</p>
+          </div>
+          <div className="contact-">
+            <IoMdMail />
+            <p>pcearuringu@gmail.com</p>
+          </div>
+          <div className="contact-">
+            <MdLocationOn />
+            <p>Ruringu skuta opp waka</p>
+          </div>
+          <div className="contact-">
+            <p>Office Hours</p>
+            <p>9:00am - 5:00pm Monday - Saturday</p>
+          </div>
+          items
         </div>
       </div>
 
