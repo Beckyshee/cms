@@ -1,0 +1,81 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #604c4c;
+  color: #fff;
+  padding: 20px;
+
+  .footer-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .contactus {
+    margin-top: 20px;
+
+    .header {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+
+      .contact- {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .givings {
+    margin-top: 20px;
+
+    .givings-details {
+    //   border-top: 2px solid #fff;
+      padding-top: 20px;
+
+      .header {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
