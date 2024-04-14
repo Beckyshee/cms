@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from "react";
-import "./landing.scss"; // Import the corresponding SCSS file
-
+import  { useState, useEffect } from "react";
+import "./landing.scss";
+import { GrPrevious } from "react-icons/gr";
+import { GrNext } from "react-icons/gr";
 import slide1 from "../assets/church.jpg";
 import slide2 from "../assets/about us.jpg";
 import slide3 from "../assets/youth.jpg";
 import slide4 from "../assets/devs again.jpg";
 
-const Landing: React.FC = () => {
+const Landing= () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  // Function to handle next slide
+
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
   };
 
-  // Function to handle previous slide
+
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
   };
@@ -23,17 +24,16 @@ const Landing: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
     return () => clearInterval(interval);
   }, [currentSlide]);
 
-  // Array of slide images
+
   const slides: string[] = [slide1, slide2, slide3, slide4];
 
   return (
     <div className="landing-container">
       <div className="slideshow">
-        {/* Render each slide */}
         {slides.map((slide, index) => (
           <div
             className={
@@ -45,12 +45,11 @@ const Landing: React.FC = () => {
           </div>
         ))}
 
-        {/* Navigation buttons */}
         <button className="prev" onClick={prevSlide}>
-          &#10094;
+          <GrPrevious />
         </button>
         <button className="next" onClick={nextSlide}>
-          &#10095;
+          <GrNext />
         </button>
       </div>
     </div>
