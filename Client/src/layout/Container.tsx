@@ -1,7 +1,10 @@
-// import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
 import './container.scss'
+import Landing from '../pages/Landing';
+import AboutUs from '../pages/AboutUs';
+import Leadership from '../pages/Leadership';
 // import AboutUs from '../pages/AboutUs';
 
 const Container = () => {
@@ -10,12 +13,13 @@ const Container = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      {/* <div className="centerpiece">
+      <div className="centerpiece">
         <Routes>
-          <Route path="/adminboard" element={<AboutUs />} />
-          
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/leadership" element={<Leadership />} />
         </Routes>
-      </div> */}
+      </div>
       <div className="footer">
         <Footer />
       </div>

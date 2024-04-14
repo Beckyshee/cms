@@ -54,7 +54,6 @@ const Footer = () => {
                 Monday - Saturday
               </p>
             </div>
-            items
           </div>
         </div>
 

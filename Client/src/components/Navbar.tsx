@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     setIsOpen(!isOpen);
   };
   const handleClick = () => {
-    navigate("/about-us")
+    navigate("/landing")
 }
 
   return (
