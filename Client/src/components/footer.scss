@@ -30,6 +30,28 @@
     }
   }
 
+  .services {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .services-header {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .services-details {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+
   .contactus {
     margin-top: 20px;
 
@@ -62,7 +84,7 @@
     //   border-top: 2px solid #fff;
       padding-top: 20px;
 
-      .header {
+      .giving-header {
         font-weight: bold;
         font-size: 1.2em;
         margin-bottom: 10px;

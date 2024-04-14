@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-cards">
-        <h3>FOOTER COMPONET</h3>
+        {/* <h3>FOOTER COMPONET</h3> */}
         <div className="footer-logo">
           <img src={logo} alt="logo" className="logo" />
           <div className="heading">
@@ -17,8 +17,23 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="services">
+          <div className="services-header">
+            <h3>SERVICES</h3>
+          </div>
+          <div className="services-details">
+            <p>Early Riser: 7:00am - 9:00am</p>
+            <p>English Service: 9:00am - 11:00am</p>
+            <p>Youth & Teens Service: 9:00am - 11:00am</p>
+            <p>Children Ministry: 9:00am -11:00am</p>
+            <p>Kikuyu Service: 11:00am - 1:00pm</p>
+          </div>
+        </div>
+
         <div className="contactus">
-          <div className="header">CONTACT US</div>
+          <div className="header">
+            <h3>CONTACT US</h3>
+          </div>
           <div className="contact-details">
             <div className="contact-">
               <FaPhone />
@@ -44,8 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="givings">
-          <div className="givings-details">
-            <div className="header">
+            <div className="giving-header">
               <h3>GIVE</h3>
             </div>
             <div className="details">
@@ -55,7 +69,7 @@ const Footer = () => {
               <p>Branch: Nyeri</p>
               <p></p>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
