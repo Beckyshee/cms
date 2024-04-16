@@ -34,6 +34,8 @@ const Landing= () => {
   return (
     <div className="landing-container">
       <div className="slideshow">
+       
+
         {slides.map((slide, index) => (
           <div
             className={
@@ -51,6 +53,7 @@ const Landing= () => {
         <button className="next" onClick={nextSlide}>
           <GrNext />
         </button>
+        {/* <button>save me</button> */}
       </div>
     </div>
   );
